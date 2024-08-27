@@ -3,10 +3,20 @@ import fetchWrapper from './fetch'
 interface Row {
   id: number
   name: string
-  email: string
-  city: string
-  phone: string
-  website: string
+  country: {
+    name: string
+    code: string
+  }
+  company: string
+  date: string
+  status: string
+  verified: boolean
+  activity: number
+  representative: {
+    name: string
+    image: string
+  }
+  balance: number
 }
 
 interface DataTable {
